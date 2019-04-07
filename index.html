@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+	<title>Walking Robot Simulation</title>
+  </head>
+  <body>
+    <h1>Welcome to Walking Robot Simulation</h1>
+    This problem has been taken from <a href = "https://leetcode.com/problems/walking-robot-simulation/description/">LeetCode</a>.
+    According to the problem, a robot is initially positioned at (0,0), facing north.
+    The problem requires two sets of input data :
+    <ul>
+      <li>Instruction which is received by the robot
+        <ul>
+          <li>-1 : instructs robot to turn right by 90 degrees</li>
+          <li>-2 : instructs robot to turn left by 90 degrees</li>
+          <li>1&lt;=x&lt;=9 : instructs robot to move forward by x units</li>
+        </ul>
+      </li>
+      <li>Set of obstacles positions (integral coordinates), which may halt the robot movement</li>
+    </ul>
+    Robot instructions (comma separated list):
+    <input type = "text" id = "input" placeholder = "Ex: 2,3,-1,4"/>
+    <br>
+    Pick one of the following to input robot instructions:
+    <br>
+    <input type = "radio" name = "input_manually" value = "manual"/>
+      Input the data manually
+    <br>
+    <input type = "radio" name = "input_select" value = "select"/>
+      Plot the obstacles on a graph<sup><a href="#restriction">1</a></sup>
+    <script src="script.js"></script>
+  <footer>
+    <a name = "restriction">
+    <sup> 1 </sup>
+    </a>
+    Restricts the size of display graph
+  </footer>
+  </body>
+</html>
